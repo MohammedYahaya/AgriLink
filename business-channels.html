@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Business Channels - AgriLink Africa</title>
+  <style>
+    /* Base Styles */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9fafb;
+      color: #333;
+    }
+    a {
+      color:  #2f855a;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    /* Header/Nav */
+    header {
+      background:  #2f855a;
+      color: white;
+      padding: 15px 0;
+    }
+    header .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      padding: 0;
+      margin: 0;
+    }
+    nav ul li a {
+      color: white;
+      font-weight: bold;
+    }
+    nav ul li a.active {
+      text-decoration: underline;
+    }
+
+    /* Page Title */
+    h1 {
+      text-align: center;
+      color:  #2f855a;
+      font-size: 2.5rem;
+      margin-top: 40px;
+    }
+
+    /* Business Channels Grid */
+    .channels {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin: 40px 0;
+    }
+    .channel {
+      background: white;
+      padding: 20px;
+      border-left: 5px solid  #2f855a;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+    .channel h3 {
+      color:  #2f855a;
+      margin-top: 0;
+    }
+
+    /* Footer */
+    footer {
+      background:  #2f855a;
+      color: white;
+      padding: 40px 20px;
+      font-size: 14px;
+    }
+    .footer-container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px;
+    }
+    .footer-section {
+      flex: 1 1 200px;
+    }
+    footer h3 {
+      margin-top: 0;
+    }
+    footer p, footer a {
+      color: white;
+      text-decoration: none;
+    }
+    .newsletter input[type="email"] {
+      padding: 10px;
+      width: 70%;
+      border: none;
+      border-radius: 5px 0 0 5px;
+    }
+    .newsletter button {
+      padding: 10px 20px;
+      border: none;
+      background:  #2f855a;
+      color: white;
+      font-weight: bold;
+      border-radius: 0 5px 5px 0;
+    }
+    .social-icons a {
+      margin-right: 10px;
+      font-size: 20px;
+      color: white;
+    }
+
+    /* Responsive */
+    @media (max-width: 700px) {
+      header .container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .footer-container {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h2>AgriLink Africa</h2>
+   <nav>
+        <ul class="nav-links">
+          <li><a href="I.html" data-section="home">Home</a></li>
+          <li><a href="#" data-section="products">Product</a></li>
+          <li><a href="business-channels.html">Business_Channel</a></li>
+          <li><a href="contact.html" >Contact</a></li>
+          <li><a href="blog.html" >Blog</a></li>
+          <li><a href="#" data-section="signup">Sign Up</a></li>
+          <li><a href="#" data-section="login" id="loginLink">Login</a></li>
+          <li><a href="#" id="logoutBtn" class="hidden">Logout</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+  </div>
+</header>
+
+<main class="container">
+  <h1>Our Business Channels</h1>
+  <section class="channels">
+    <div class="channel">
+      <h3>Retail Shops</h3>
+      <p>Physical stores offering fresh produce and essentials directly to urban consumers.</p>
+    </div>
+    <div class="channel">
+      <h3>B2B Sales</h3>
+      <p>Supplying star-rated hotels, supermarkets, and institutions with bulk, quality-assured agricultural products.</p>
+    </div>
+    <div class="channel">
+      <h3>Residential Compound Retail</h3>
+      <p>Direct delivery of fresh produce to gated communities and residential areas.</p>
+    </div>
+    <div class="channel">
+      <h3>Joint Ventures with Retailers</h3>
+      <p>Partnering with retail shops to expand reach and promote fresh produce access.</p>
+    </div>
+    <div class="channel">
+      <h3>Weekend Market</h3>
+      <p>Mobile weekend markets that promote our brand and serve local communities.</p>
+    </div>
+    <div class="channel">
+      <h3>Regional Distribution & Franchising</h3>
+      <p>Expanding through regional hubs and franchise models to widen our market presence.</p>
+    </div>
+    <div class="channel">
+      <h3>Bazar Market</h3>
+      <p>Participating in local markets to increase brand visibility and customer reach.</p>
+    </div>
+    <div class="channel">
+      <h3>E-commerce</h3>
+      <p>Online platform for direct ordering and delivery of fresh produce.</p>
+    </div>
+    <div class="channel">
+      <h3>Wholesale</h3>
+      <p>Bulk distribution to resellers and vendors across Ethiopia and beyond.</p>
+    </div>
+    <div class="channel">
+      <h3>Farming</h3>
+      <p>Collaborating with smallholder farmers and operating our own farms to ensure consistent supply.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-container container">
+    <div class="footer-section">
+      <h3>Contact Us</h3>
+      <p>+251 (0) 9 82 64 90 36</p>
+      <p>agrilinkt@gmail.com</p>
+      <p>Bulgariya Mebrat, Addis Ababa, Ethiopia</p>
+    </div>
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul style="list-style:none; padding-left:0;">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="business-channels.html" class="active">Business Channels</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </div>
+    <div class="footer-section newsletter">
+      <h3>Stay Informed</h3>
+      <p>Stay informed through our website & get offers anytime!</p>
+      <form>
+        <input type="email" placeholder="Your Email Address" required />
+        <button type="submit">Subscribe</button>
+      </form>
+      <div class="social-icons">
+        <a href="#">LinkedIn</a>
+        <a href="#">TikTok</a>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+      </div>
+    </div>
+  </div>
+  <div style="text-align:center; margin-top: 20px; font-size:12px; opacity:0.6;">
+    &copy; 1823 - 2025 Mintesnot Aweke
+  </div>
+</footer>
+
+</body>
+</html>

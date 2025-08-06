@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog - AgriLink Africa</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9fafb;
+      color: #333;
+    }
+    a {
+      color:  #2f855a;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    header {
+      background:  #2f855a;
+      color: white;
+      padding: 15px 0;
+    }
+    header .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      padding: 0;
+      margin: 0;
+    }
+    nav ul li a {
+      color: white;
+      font-weight: bold;
+    }
+    nav ul li a.active {
+      text-decoration: underline;
+    }
+
+    h1 {
+      text-align: center;
+      color:  #2f855a;
+      font-size: 2.5rem;
+      margin-top: 40px;
+    }
+
+    .blog-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin: 40px 0;
+    }
+    .blog-post {
+      background: white;
+      border-left: 5px solid  #2f855a;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      padding: 20px;
+    }
+    .blog-post h3 {
+      margin-top: 0;
+      color:  #2f855a;
+    }
+    .blog-post small {
+      display: block;
+      margin-bottom: 10px;
+      color: #777;
+    }
+
+    footer {
+      background:  #2f855a;
+      color: white;
+      padding: 40px 20px;
+      font-size: 14px;
+    }
+    .footer-container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px;
+    }
+    .footer-section {
+      flex: 1 1 200px;
+    }
+    footer h3 {
+      margin-top: 0;
+    }
+    footer p, footer a {
+      color: white;
+      text-decoration: none;
+    }
+    .newsletter input[type="email"] {
+      padding: 10px;
+      width: 70%;
+      border: none;
+      border-radius: 5px 0 0 5px;
+    }
+    .newsletter button {
+      padding: 10px 20px;
+      border: none;
+      background:  #2f855a;
+      color: white;
+      font-weight: bold;
+      border-radius: 0 5px 5px 0;
+    }
+    .social-icons a {
+      margin-right: 10px;
+      font-size: 20px;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      header .container {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .footer-container {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h2>AgriLink Africa</h2>
+    <nav>
+        <ul class="nav-links">
+          <li><a href="I.html" data-section="home">Home</a></li>
+          <li><a href="#" data-section="products">Product</a></li>
+          <li><a href="business-channels.html">Business_Channel</a></li>
+          <li><a href="contact.html" >Contact</a></li>
+          <li><a href="blog.html" >Blog</a></li>
+          <li><a href="#" data-section="signup">Sign Up</a></li>
+          <li><a href="#" data-section="login" id="loginLink">Login</a></li>
+          <li><a href="#" id="logoutBtn" class="hidden">Logout</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+  </div>
+</header>
+
+<main class="container">
+  <h1>Recent Blogs</h1>
+  <section class="blog-list">
+    
+    <div class="blog-post">
+      <h3>Ethiopia’s Fresh Produce Goes Global</h3>
+      <small>By admin | May 3, 2025 | Uncategorized</small>
+      <p>Ethiopia is home to high-quality fruits and vegetables that are now gaining recognition abroad. AgriLink Africa is tapping into this potential by exporting fresh produce to neighboring countries like...</p>
+      <a href="#">Read More</a>
+    </div>
+
+    <div class="blog-post">
+      <h3>Building an Agricultural Supply Chain That Works for Everyone</h3>
+      <small>By admin | May 3, 2025 | Uncategorized</small>
+      <p>Most traditional agricultural supply chains are filled with inefficiencies, losses, and unfair pricing. AgriLink Africa is building something different—an inclusive, modern supply chain that works for...</p>
+      <a href="#">Read More</a>
+    </div>
+
+    <div class="blog-post">
+      <h3>Why Farm-to-Home Delivery is the Future of Fresh Produce in Ethiopia</h3>
+      <small>By admin | May 3, 2025 | Uncategorized</small>
+      <p>Urban consumers want fresh, clean, and affordable produce—but they often face inflated prices and limited options in supermarkets. AgriLink Africa is solving that problem through its farm-to-home...</p>
+      <a href="#">Read More</a>
+    </div>
+
+    <div class="blog-post">
+      <h3>How AgriLink Africa is Transforming the Lives of Smallholder Farmers</h3>
+      <small>By admin | May 3, 2025 | Uncategorized</small>
+      <p>Smallholder farmers across Ethiopia have long struggled with low market prices, limited access to buyers, and exploitation by middlemen. AgriLink Africa is changing that story. By creating a direct...</p>
+      <a href="#">Read More</a>
+    </div>
+
+  </section>
+</main>
+
+<footer>
+  <div class="footer-container container">
+    <div class="footer-section">
+      <h3>Contact Us</h3>
+      <p>+251 (0) 9 82 64 90 36</p>
+      <p>agrilinkt@gmail.com</p>
+      <p>Bulgariya Mebrat, Addis Ababa, Ethiopia</p>
+    </div>
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul style="list-style:none; padding-left:0;">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="business-channels.html">Business Channels</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+      </ul>
+    </div>
+    <div class="footer-section newsletter">
+      <h3>Stay Informed</h3>
+      <p>Stay informed through our website & get offers anytime!</p>
+      <form>
+        <input type="email" placeholder="Your Email Address" required />
+        <button type="submit">Subscribe</button>
+      </form>
+      <div class="social-icons">
+        <a href="#">LinkedIn</a>
+        <a href="#">TikTok</a>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+      </div>
+    </div>
+  </div>
+  <div style="text-align:center; margin-top: 20px; font-size:12px; opacity:0.6;">
+    &copy; 1823 - 2025 Mintesnot Aweke
+  </div>
+</footer>
+
+</body>
+</html>
