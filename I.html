@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AgriLink Africa - Connecting Farmers to Markets</title>
+<style>
+  /* Reset and base */
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9fafb; color: #333;
+  }
+  a {
+    color: #1a8cff; text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /* Container */
+  .container {
+    max-width: 1200px; margin: auto; padding: 0 20px;
+  }
+
+  /* Header */
+  header {
+    background: #1a8cff; color: white;
+    padding: 15px 0;
+  }
+  header .container {
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  header nav ul {
+    list-style: none; display: flex; gap: 25px; margin: 0; padding: 0;
+  }
+  header nav ul li {
+    font-weight: 600;
+  }
+  header nav ul li a {
+    color: white; font-size: 16px;
+  }
+
+  /* Hero/About Section */
+  #about {
+    background: white;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  #about h1 {
+    font-size: 2.5rem; margin-bottom: 20px; color: #1a8cff;
+  }
+  #about p {
+    max-width: 800px; margin: auto; font-size: 1.1rem; line-height: 1.6;
+  }
+
+  /* Features */
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    background: white;
+    padding: 40px 20px;
+  }
+  .feature {
+    background: #e6f0ff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 2px 8px rgb(26 140 255 / 0.15);
+  }
+  .feature h2 {
+    color: green;
+    margin-bottom: 12px;
+    font-size: 1.4rem;
+  }
+  .feature ul {
+    list-style: none;
+    padding-left: 0;
+    line-height: 1.5;
+  }
+  .feature ul li {
+    margin-bottom: 8px;
+  }
+  .feature a {
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 10px;
+    color: green;
+  }
+
+  /* Footer */
+  footer {
+    background: green; color: white;
+    padding: 40px 20px;
+    font-size: 14px;
+  }
+  footer .footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  footer .footer-section {
+    flex: 1 1 200px;
+  }
+  footer h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 700;
+  }
+  footer p, footer a {
+    color: white;
+    text-decoration: none;
+  }
+  footer a:hover {
+    text-decoration: underline;
+  }
+  footer .newsletter input[type="email"] {
+    padding: 10px;
+    width: 70%;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+  }
+  footer .newsletter button {
+    padding: 10px 20px;
+    border: none;
+    background: #004b99;
+    color: white;
+    font-weight: 700;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+
+  /* Social Icons */
+  .social-icons {
+    margin-top: 10px;
+  }
+  .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    color: white;
+    font-size: 20px;
+  }
+
+  /* Responsive */
+  @media (max-width: 700px) {
+    header .container {
+      flex-direction: column;
+      gap: 15px;
+    }
+    .features {
+      padding: 20px 10px;
+    }
+    footer .footer-container {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>AgriLink </h1>
+    <div class="container">
+      <h1 class="logo">AgriLink</h1>
+      <div class="menu-toggle" id="menuToggle">&#9776;</div>
+      <nav id="navbar">
+        <ul class="nav-links">
+          <li><a href="I.html" data-section="home">Home</a></li>
+          <li><a href="#" data-section="products">Product</a></li>
+          <li><a href="business-channels.html">Business_Channel</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="#" data-section="signup">Sign Up</a></li>
+          <li><a href="#" data-section="login" id="loginLink">Login</a></li>
+          <li><a href="#" id="logoutBtn" class="hidden">Logout</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+</header>
+
+<section id="about" class="container">
+  <h1>Who are we?</h1>
+  <p>We are AgriLink Africa. We connect smallholder farmers to markets, resources, and better opportunities. Our mission is to make agriculture profitable and sustainable for those who grow our food. We work hand in hand with farmers—helping them increase productivity, improve quality, and earn fair returns for their hard work.</p>
+  <p>We don’t just move products—we move lives forward. Every fresh fruit, every vegetable, and every grain we deliver tells a story of dedication, dignity, and progress. By strengthening value chains and bridging rural farmers with urban consumers, we build stronger communities and a healthier future for all.</p>
+</section>
+
+<section class="features container">
+  <div class="feature">
+    <h2>01. Direct supply from farmers</h2>
+    <ul>
+      <li>Get products directly from farmers and make sure they earn a fair income.</li>
+      <li>Cut Out the Middlemen - Farmers sell straight to buyers with no extra layers.</li>
+      <li>Better Prices for Farmers and Buyers - Farmers earn more, and buyers pay less.</li>
+    </ul>
+    <a href="#">Know More</a>
+  </div>
+  <div class="feature">
+    <h2>02. Sell Everywhere in the Country</h2>
+    <ul>
+      <li>Build a strong network to deliver and sell across cities and rural areas.</li>
+      <li>Shops and Mobile Outlets - Fixed and moving stores reach more people.</li>
+      <li>Access to Remote Areas - Supply chain brings products to hard-to-reach places.</li>
+    </ul>
+    <a href="#">Know More</a>
+  </div>
+  <div class="feature">
+    <h2>03. Go Online and Export</h2>
+    <ul>
+      <li>Use websites for local sales and send top-quality goods to other countries.</li>
+      <li>Sell Through E-commerce - Customers order online and get home delivery.</li>
+      <li>Reach Global Markets - Export products to international buyers.</li>
+    </ul>
+    <a href="#">Know More</a>
+  </div>
+  <div class="feature">
+    <h2>04. Focus on Quality and People</h2>
+    <ul>
+      <li>Keep product standards high while supporting local communities with jobs and training.</li>
+      <li>Strict Quality Checks - Ensure every product meets high standards.</li>
+      <li>Support Local Communities - Hire locally and provide training and resources.</li>
+    </ul>
+    <a href="#">Know More</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-container container">
+    <div class="footer-section">
+      <h3>Contact Us</h3>
+      <p>+251 (0) 9 82 64 90 36</p>
+      <p>agrilinkt@gmail.com</p>
+      <p>Bulgariya Mebrat, Addis Ababa, Ethiopia</p>
+    </div>
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul style="list-style:none; padding-left:0;">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Business Channels</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </div>
+    <div class="footer-section newsletter">
+      <h3>Stay Informed</h3>
+      <p>Stay informed through our website & get offers anytime!</p>
+      <form>
+        <input type="email" placeholder="Your Email Address" required />
+        <button type="submit">Subscribe</button>
+      </form>
+      <div class="social-icons">
+        <a href="#" aria-label="LinkedIn">&#128279;</a>
+        <a href="#" aria-label="TikTok">&#127916;</a>
+        <a href="#" aria-label="Facebook">&#128100;</a>
+        <a href="#" aria-label="Instagram">&#127748;</a>
+      </div>
+    </div>
+  </div>
+  <div style="text-align:center; margin-top: 20px; font-size:12px; opacity:0.6;">
+    &copy; 1823 - 2025 Mintesnot Aweke
+  </div>
+</footer>
+   <script src="script.js"></script>
+</body>
+</html>
