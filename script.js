@@ -141,3 +141,7 @@ document.getElementById('logoutBtn').addEventListener('click', () => {
 window.onload = () => {
   showSection('home');
 };
+
+document.getElementById("menuToggle").addEventListener("click", function () {
+  document.querySelector("#navbar .nav-links").classList.toggle("show");
+});

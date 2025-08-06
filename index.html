@@ -11,13 +11,14 @@
   <header>
     <div class="container">
       <h1 class="logo">AgriLink</h1>
-      <nav>
+      <div class="menu-toggle" id="menuToggle">&#9776;</div>
+      <nav id="navbar">
         <ul class="nav-links">
           <li><a href="I.html" data-section="home">Home</a></li>
           <li><a href="#" data-section="products">Product</a></li>
           <li><a href="business-channels.html">Business_Channel</a></li>
-          <li><a href="contact.html" >Contact</a></li>
-          <li><a href="blog.html" >Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="blog.html">Blog</a></li>
           <li><a href="#" data-section="signup">Sign Up</a></li>
           <li><a href="#" data-section="login" id="loginLink">Login</a></li>
           <li><a href="#" id="logoutBtn" class="hidden">Logout</a></li>
@@ -31,48 +32,49 @@
     <h2>Welcome to AgriLink</h2>
     <p>Connecting Ghanaian farmers to reliable buyers nationwide.</p>
 
-  <h3>Who are we?</h1>
-  <p>We are AgriLink Africa. We connect smallholder farmers to markets, resources, and better opportunities. Our mission is to make agriculture profitable and sustainable for those who grow our food. We work hand in hand with farmers—helping them increase productivity, improve quality, and earn fair returns for their hard work.</p>
-  <p>We don't just move products—we move lives forward. Every fresh fruit, every vegetable, and every grain we deliver tells a story of dedication, dignity, and progress. By strengthening value chains and bridging rural farmers with urban consumers, we build stronger communities and a healthier future for all.</p>
+    <h2>Who are we?</h2>
+    <p>We are AgriLink Africa. We connect smallholder farmers to markets, resources, and better opportunities. Our mission is to make agriculture profitable and sustainable for those who grow our food. We work hand in hand with farmers—helping them increase productivity, improve quality, and earn fair returns for their hard work.</p>
+    <p>We don't just move products—we move lives forward. Every fresh fruit, every vegetable, and every grain we deliver tells a story of dedication, dignity, and progress. By strengthening value chains and bridging rural farmers with urban consumers, we build stronger communities and a healthier future for all.</p>
 
+    <div class="feature">
+      <h2>01. Direct supply from farmers</h2>
+      <ul>
+        <li>Get products directly from farmers and make sure they earn a fair income.</li>
+        <li>Cut Out the Middlemen - Farmers sell straight to buyers with no extra layers.</li>
+        <li>Better Prices for Farmers and Buyers - Farmers earn more, and buyers pay less.</li>
+      </ul>
+      <a href="#">Know More</a>
+    </div>
 
-    <h2>01. Direct supply from farmers</h2>
-    <ul>
-      <li>Get products directly from farmers and make sure they earn a fair income.</li>
-      <li>Cut Out the Middlemen - Farmers sell straight to buyers with no extra layers.</li>
-      <li>Better Prices for Farmers and Buyers - Farmers earn more, and buyers pay less.</li>
-    </ul>
-    <a href="#">Know More</a>
-  </div>
-  
-    <h2>02. Sell Everywhere in the Country</h2>
-    <ul>
-      <li>Build a strong network to deliver and sell across cities and rural areas.</li>
-      <li>Shops and Mobile Outlets - Fixed and moving stores reach more people.</li>
-      <li>Access to Remote Areas - Supply chain brings products to hard-to-reach places.</li>
-    </ul>
-    <a href="#">Know More</a>
-  </div>
-  
-    <h2>03. Go Online and Export</h2>
-    <ul>
-      <li>Use websites for local sales and send top-quality goods to other countries.</li>
-      <li>Sell Through E-commerce - Customers order online and get home delivery.</li>
-      <li>Reach Global Markets - Export products to international buyers.</li>
-    </ul>
-    <a href="#">Know More</a>
-  </div>
- 
-    <h2>04. Focus on Quality and People</h2>
-    <ul>
-      <li>Keep product standards high while supporting local communities with jobs and training.</li>
-      <li>Strict Quality Checks - Ensure every product meets high standards.</li>
-      <li>Support Local Communities - Hire locally and provide training and resources.</li>
-    </ul>
-    <a href="#">Know More</a>
-  </div>
-</section>
+    <div class="feature">
+      <h2>02. Sell Everywhere in the Country</h2>
+      <ul>
+        <li>Build a strong network to deliver and sell across cities and rural areas.</li>
+        <li>Shops and Mobile Outlets - Fixed and moving stores reach more people.</li>
+        <li>Access to Remote Areas - Supply chain brings products to hard-to-reach places.</li>
+      </ul>
+      <a href="#">Know More</a>
+    </div>
 
+    <div class="feature">
+      <h2>03. Go Online and Export</h2>
+      <ul>
+        <li>Use websites for local sales and send top-quality goods to other countries.</li>
+        <li>Sell Through E-commerce - Customers order online and get home delivery.</li>
+        <li>Reach Global Markets - Export products to international buyers.</li>
+      </ul>
+      <a href="#">Know More</a>
+    </div>
+
+    <div class="feature">
+      <h2>04. Focus on Quality and People</h2>
+      <ul>
+        <li>Keep product standards high while supporting local communities with jobs and training.</li>
+        <li>Strict Quality Checks - Ensure every product meets high standards.</li>
+        <li>Support Local Communities - Hire locally and provide training and resources.</li>
+      </ul>
+      <a href="#">Know More</a>
+    </div>
   </section>
 
   <section id="signup" class="section hidden">
@@ -113,12 +115,15 @@
     <div class="product-grid" id="marketProducts">Loading products...</div>
   </section>
 
-
-
   <footer>
     <p>&copy; 2025 AgriLink. All rights reserved.</p>
   </footer>
 
+ <script>
+  document.getElementById("menuToggle").addEventListener("click", function () {
+    document.querySelector("#navbar .nav-links").classList.toggle("show");
+  });
+</script>
   <script src="script.js"></script>
 </body>
 </html>
